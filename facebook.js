@@ -92,7 +92,6 @@ window.fbAsyncInit = function() {
     FB.api('/me', {fields: fields}, function(details) {
       // output the response
       $('#userdata').html(JSON.stringify(details, null, '\t'));
-      $('#fb-logout').attr('style', 'display:block;');
       $('#fb-login').attr('style', 'display:none;');
     });
   }
@@ -108,14 +107,4 @@ window.fbAsyncInit = function() {
     }, {scope: permissions});
   });
 
-  $('#fb-logout').click(function(){
-    FB.logout(function(result) {
-      if(result) {
-        $('#header').html('Get Facebook User Data');
-        $('#userdata').html('');
-        $('#fb-login').attr("style", 'display:block');
-        $('#fb-logout').attr("style", 'display:none');
-      }
-    });
-  }); 
 }
