@@ -1,11 +1,9 @@
 {
-  "name": "Twitter_example",
+  "name": "facebook-oauthv2-js-sdk-example",
   "version": "0.0.1",
-  "description": "Demo Twitter application using node.js and request module.",
+  "description": "A sample code project using Facebook's Javascript SDK to perform client-side OAuth",
   "dependencies": {
-	"request": "*",
-	"qs": "*",
-	"express": "*"
+  	"express": "*"
    },
   "engine": "node 0.6.x"
 }
