@@ -1,0 +1,11 @@
+{
+  "name": "Twitter_example",
+  "version": "0.0.1",
+  "description": "Demo Twitter application using node.js and request module.",
+  "dependencies": {
+	"request": "*",
+	"qs": "*",
+	"express": "*"
+   },
+  "engine": "node 0.6.x"
+}
