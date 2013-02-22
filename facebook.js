@@ -107,4 +107,4 @@ window.fbAsyncInit = function() {
     }, {scope: permissions});
   });
 
-}
+};
